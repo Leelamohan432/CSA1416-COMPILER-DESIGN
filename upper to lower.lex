@@ -1,0 +1,23 @@
+%{
+%}
+%%
+[a-z] {printf("%c",yytext[0]-32);}
+. {}
+%%
+int yywrap(void){}
+int main()
+{
+printf("\nEnter The String:");
+yylex();
+}%{
+%}
+%%
+[a-z] {printf("%c",yytext[0]-32);}
+. {}
+%%
+int yywrap(void){}
+int main()
+{
+printf("\nEnter The String:");
+yylex();
+}
